@@ -1,0 +1,159 @@
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .banner .row div:last-child button {
+  display: none;
+}
+
+.contact .banner .row button {
+  margin-left: 70%;
+  transform: translate(-50%, -50%);
+  width: 125px;
+}
+
+.contact .places {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.contact .contactless {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.contactless {
+  display: flex;
+  width: 100%;
+}
+
+.contact .contactless img {
+  width: 80px;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 60px;
+  margin: auto 20px auto 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.formation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .contact .contactless {
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .box {
+    grid-template-columns: 1fr;
+  }
+
+  .contact .places {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .contact .contactless img {
+    margin: 0 0 10px 0;
+    width: 60px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact .banner .row button {
+    margin-left: 50%;
+    width: 100px;
+  }
+
+  .form {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}

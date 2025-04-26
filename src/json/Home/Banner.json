@@ -1,0 +1,24 @@
+[
+    {
+
+        "imageBack": "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg",          
+        "bannerHead": "Ziptech Provides Best IT Solution",
+        "bannerDesc": "We provide best technology and IT services around the world with more than 30+ years of experience",
+        "bannerButton1": "Contact Us",
+        "bannerButton2": "Read More"
+    },
+    {
+        "imageBack": "/office.jpg",
+        "bannerHead": "Innovative Digital Solutions",
+        "bannerDesc": "Bringing cutting-edge digital solutions to improve business efficiency and productivity.",
+        "bannerButton1": "Get Started",
+        "bannerButton2": "Learn More"
+    },
+    {
+        "imageBack": "/image1.jpg",
+        "bannerHead": "Your Trusted IT Partner",
+        "bannerDesc": "Reliable and secure IT services tailored to your business needs.",
+        "bannerButton1": "Consult Now",
+        "bannerButton2": "Explore Services"
+    }
+]

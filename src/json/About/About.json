@@ -1,0 +1,30 @@
+[
+  {
+    "aboutImage": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    "aboutHead": "Our Mission & Vision",
+    "aboutDesc": "We believe in delivering innovative solutions that empower businesses and individuals. Our goal is to create impact through technology, design, and strategic insights.",
+    "aboutList": [
+      {
+        "image": "https://www.svgrepo.com/show/491588/checkmark-circle.svg",
+        "comp": "Delivering cutting-edge solutions"
+      },
+      {
+        "image": "https://www.svgrepo.com/show/491588/checkmark-circle.svg",
+        "comp": "Empowering businesses with technology"
+      },
+      {
+        "image": "https://www.svgrepo.com/show/491588/checkmark-circle.svg",
+        "comp": "Building a sustainable future"
+      },
+      {
+        "image": "https://www.svgrepo.com/show/491588/checkmark-circle.svg",
+        "comp": "Enhancing user experiences through design"
+      },
+      {
+        "image": "https://www.svgrepo.com/show/491588/checkmark-circle.svg",
+        "comp": "Commitment to excellence and innovation"
+      }
+    ],
+    "buttonDesc": "Learn More"
+  }
+]

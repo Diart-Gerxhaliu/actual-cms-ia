@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Buying a Telescope",
+    "description": "Buying the right telescope to take your love of astronomy to the next level is a big next step in the development of your passion for the stars...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Astronomy",
+    "tags": ["guides", "telescopes"],
+    "date": "Oct 30, 2023"
+  },
+  {
+    "id": 2,
+    "title": "How to choose the right hotel",
+    "description": "So you're going abroad, you've chosen your destination and now you have to choose a hotel...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Travel",
+    "tags": ["hotels"],
+    "date": "Oct 27, 2023"
+  },
+  {
+    "id": 3,
+    "title": "Maui helicopter tours",
+    "description": "Maui helicopter tours are a great way to see the island from a different perspective and have a fun adventure...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Travel",
+    "tags": ["adventure"],
+    "date": "Oct 26, 2023"
+  },
+  {
+    "id": 4,
+    "title": "The Best Lenses for Photography",
+    "description": "Choosing the right lenses can make a huge difference in your photography. Here are the top picks for various genres...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Photography",
+    "tags": ["lenses", "photography"],
+    "date": "Oct 25, 2023"
+  },
+  {
+    "id": 5,
+    "title": "Guide to Hiking in the Rockies",
+    "description": "The Rockies offer some of the most scenic and challenging hikes in North America. Here's your ultimate guide...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Adventure",
+    "tags": ["hiking", "outdoors"],
+    "date": "Oct 24, 2023"
+  },
+  {
+    "id": 6,
+    "title": "10 Tips for Solo Travel",
+    "description": "Traveling alone can be one of the most rewarding experiences. Here are 10 tips to make your solo adventure safer and more enjoyable...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Travel",
+    "tags": ["solo", "adventure"],
+    "date": "Oct 23, 2023"
+  },
+  {
+    "id": 7,
+    "title": "How to Build a Custom PC",
+    "description": "Building your own computer can be a great way to save money and get exactly what you want. Here’s how to do it step by step...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Tech",
+    "tags": ["computers", "custom"],
+    "date": "Oct 22, 2023"
+  },
+  {
+    "id": 8,
+    "title": "Exploring the Great Barrier Reef",
+    "description": "The Great Barrier Reef is one of the most stunning natural wonders of the world. Here’s everything you need to know to explore it...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Nature",
+    "tags": ["reef", "scuba diving"],
+    "date": "Oct 21, 2023"
+  },
+  {
+    "id": 9,
+    "title": "Mastering Landscape Photography",
+    "description": "Learn how to capture breathtaking landscapes with these pro tips and camera settings...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Photography",
+    "tags": ["landscape", "tips"],
+    "date": "Oct 20, 2023"
+  },
+  {
+    "id": 10,
+    "title": "Stargazing for Beginners",
+    "description": "New to astronomy? This guide covers everything you need to start identifying constellations and stars...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Astronomy",
+    "tags": ["stars", "beginner"],
+    "date": "Oct 19, 2023"
+  },
+  {
+    "id": 11,
+    "title": "Top 5 Travel Gadgets for 2024",
+    "description": "Make your journeys smoother and more enjoyable with these must-have travel gadgets...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Tech",
+    "tags": ["gadgets", "travel"],
+    "date": "Oct 18, 2023"
+  },
+  {
+    "id": 12,
+    "title": "Eco-Friendly Camping Tips",
+    "description": "Camp responsibly with these eco-friendly practices that help preserve nature...",
+    "image": "https://img.freepik.com/free-photo/office-desk-with-laptop_23-2148821886.jpg",
+    "category": "Adventure",
+    "tags": ["camping", "eco"],
+    "date": "Oct 17, 2023"
+  }
+]

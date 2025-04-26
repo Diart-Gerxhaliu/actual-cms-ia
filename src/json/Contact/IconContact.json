@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "https://www.svgrepo.com/show/532550/map-location-pin.svg",
+        "head": "Address",
+        "desc": "123 Bahri Kuqi, Vushtrri"
+    },
+    {
+        "icon": "https://www.svgrepo.com/show/532550/map-location-pin.svg",
+        "head": "Email Us",
+        "desc": "filanfisteku@gmail.com"
+    },
+    {
+        "icon": "https://www.svgrepo.com/show/532550/map-location-pin.svg",
+        "head": "Phone",
+        "desc": "+383 12 345 678"
+    }
+]

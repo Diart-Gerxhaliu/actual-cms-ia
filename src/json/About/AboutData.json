@@ -1,0 +1,46 @@
+[
+  {
+    "banner": {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXcvgW-KJUiiRMFR_CX6JLTJezxER_GoXhaA&s  ",
+      "heading": "About IACMS",
+      "subheading": "Delivering Innovative IT Solutions for Businesses Worldwide"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become a trusted technology partner for businesses worldwide, delivering transformative solutions that inspire growth and success."
+    },
+    "services": {
+      "title": "What We Offer",
+      "list": [
+        "Custom Web Development (React.js, JavaScript, HTML, CSS)",
+        "Enterprise Software Development",
+        "WordPress Development & CMS Solutions",
+        "UI/UX Design & Branding",
+        "API Development & Integration",
+        "IT Consulting & Digital Strategy"
+      ],
+      "image": "https://www.t-systems.com/resource/image/985020/ratio3x2/1440/960/fe0d14c0354fc329ad1f4cff5a1c1cf/B67A5438A6A603902EB00238D865C739/im-what-we-offer-local.jpg"
+    },
+    "reasons": {
+      "title": "Why Choose IACMS?",
+      "list": [
+        "Experienced & passionate development team",
+        "Client-centric, result-driven approach",
+        "Innovative and scalable solutions",
+        "Timely delivery & professional project management",
+        "Ongoing support, maintenance, and optimization"
+      ],
+      "image": "https://img.freepik.com/premium-photo/why-choose-us_220873-5578.jpg?semt=ais_hybrid"
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "description": "At IACMS, we don't just deliver projects — we build long-term partnerships based on trust, integrity, and a shared vision for success. Your goals become our mission."
+    },
+    "cta": {
+      "title": "Let’s Innovate Together",
+      "description": "Ready to take your business to the next level? Contact IACMS today and let's build powerful solutions that drive real results.",
+      "buttonText": "Contact Us",
+      "buttonLink": "/contact"
+    }
+  }
+]

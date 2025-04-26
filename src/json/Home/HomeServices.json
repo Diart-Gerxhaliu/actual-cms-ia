@@ -1,0 +1,18 @@
+[
+    {
+        "card": [
+            {
+                "image": "/image1.jpg",
+                "comp": "HTML"
+            },
+            {
+                "image": "/image2.jpg",
+                "comp": "CSS"
+            },
+            {
+                "image": "/image3.jpg",
+                "comp": "Java Script"
+            }
+        ]
+    }
+]

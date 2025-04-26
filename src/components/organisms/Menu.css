@@ -1,0 +1,81 @@
+/* ===== Base Navigation Styles ===== */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+/* Logo */
+.menu img {
+  width: 140px;
+  height: auto;
+  padding: 5px;
+  background-color: black;
+  border-radius: 15px;
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .navbar a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+}

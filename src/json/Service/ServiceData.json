@@ -1,0 +1,17 @@
+ [
+   {
+     "title": "Mobile Development",
+     "description": "Sample text. Click to select the text box. Click again or double click to start editing the text. Excepteur sint occaecat cupidatat non proident.",
+     "icon": "code"
+   },
+   {
+     "title": "Mobility Services",
+     "description": "Sample text. Click to select the text box. Click again or double click to start editing the text. Excepteur sint occaecat cupidatat non proident.",
+     "icon": "layers"
+   },
+   {
+     "title": "Software Consulting",
+     "description": "Sample text. Click to select the text box. Click again or double click to start editing the text. Excepteur sint occaecat cupidatat non proident.",
+     "icon": "users"
+   }
+ ]
