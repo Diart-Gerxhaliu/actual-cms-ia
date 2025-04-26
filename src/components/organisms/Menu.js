@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Image from "../atoms/Image";
 import Navcomps from "../../json/Menu.json";
 import Logo from "../../json/Logo.json";
@@ -8,18 +8,21 @@ import "./Menu.css";
 function Menu() {
   const [lG, setLG] = useState([]);
   const [lN, setLN] = useState([]);
-  const [menuStyle, setMenuStyle] = useState({});
+  
+   const [menuStyle, setMenuStyle] = useState({});
   const [isOpen, setIsOpen] = useState(false);
   const [MenuStyleDinamic, setMenuStyleDinamic] = useState({});
-  const [menuStyleLS, setMenuStyleLS] = useState(localStorage.getItem("menuStyle")||[]);
+  
   let [menuStylevvv,setMenuStylevvv] = useState({
     ...menuStyle,
     ...MenuStyleDinamic,
   });
+
+      let [menuStyleLS, setMenuStyleLS] = useState([]);
     
 
 
-  const menuStyles = React.useMemo(() => [
+  const menuStyles = useMemo(() => [
     {
       name: "Minimal Light",
       properties: {
@@ -123,6 +126,13 @@ function Menu() {
   ], []);
 
   useEffect(() => {
+    let loc = localStorage.getItem("menuStyle");
+    
+        if (loc == null) {
+          localStorage.setItem("menuStyle", 1);
+        } else {  
+          setMenuStyleLS(JSON.parse(loc));
+        }
     const style = {
       height: "90px",
       padding: "15px 50px",
@@ -153,14 +163,14 @@ function Menu() {
     setMenuStyleLS(localStorage.getItem("menuStyle"))
     setMenuStylevvv({
       ...menuStyle,
-      ...menuStyles[menuStyleLS-1].properties,
+      ...menuStyles[menuStyleLS-1]?.properties,
     });
 
 
 
-  }, []);
-
-  
+  }, [menuStylevvv ]);
+ 
+   
   return (
     <div className="menu" style={menuStylevvv}>
       {lG.map((gal, idx) => (
