@@ -177,7 +177,6 @@ function Menu() {
 
   }, []);
  
-   
   return (
     <div className="menu" style={menuStylevvv}>
       {lG.map((gal, idx) => (
@@ -186,9 +185,9 @@ function Menu() {
 
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? ( 
-          <CloseIcon color="white" size={28} />
+          <CloseIcon color={menuStylevvv.color} size={28} />
         ) : (
-          <MenuIcon color="white" size={28} />
+          <MenuIcon color={menuStylevvv.color} size={28} />
         )}
       </div>
 

@@ -62,16 +62,17 @@
   }
   .hamburger {
     display: block;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .navbar {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: inherit;
     width: 100%;
     position: absolute;
-    top: 90px;
+    top: 60px;
     left: 0;
     padding: 20px 0;
   }
