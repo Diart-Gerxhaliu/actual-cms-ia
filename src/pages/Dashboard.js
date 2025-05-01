@@ -1101,7 +1101,6 @@ function Dashboard() {
           </div>
         )}
 
-
         {data === "posts" && (
           <div className="blog-grid row">
           {blogPosts.map((post, index) => (
