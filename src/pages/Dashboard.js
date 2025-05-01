@@ -1082,7 +1082,7 @@ function Dashboard() {
         )}
 
         {data === "feedback" && (
-          <div className="feedback">
+          <div className="feedbackdashboard">
             {feedback.length > 0 ? (
               feedback.map((element, index) => (
                 <div className="card" key={index}>
