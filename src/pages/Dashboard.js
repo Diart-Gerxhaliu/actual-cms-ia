@@ -44,7 +44,7 @@ function Dashboard() {
   );
   //*Menu
   let [menuStyle, setMenuStyle] = useState(
-    JSON.parse(localStorage.getItem("MenuStyleDinamic")) || []
+    JSON.parse(localStorage.getItem("MenuStyle")) || []
   );
   //*Banner
   let [bannerStyle, setBannerStyle] = useState(
@@ -52,6 +52,7 @@ function Dashboard() {
   );
 
   //!Config the blog
+  
   //*set the posts
   const [blogPosts, setBlogPosts] = useState(JSON.parse(localStorage.getItem("blogPosts")) || [] )
 

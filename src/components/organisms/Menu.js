@@ -125,6 +125,12 @@ function Menu() {
     },
   ], []);
 
+  const style = [{
+    height: "90px",
+    padding: "15px 50px",
+    justifyContent: " ",
+  }];
+
   useEffect(() => {
     let loc = localStorage.getItem("menuStyle");
     
@@ -133,11 +139,7 @@ function Menu() {
         } else {  
           setMenuStyleLS(JSON.parse(loc));
         }
-    const style = {
-      height: "90px",
-      padding: "15px 50px",
-      justifyContent: "space-between",
-    };
+        
 
     const styleLS = localStorage.getItem("MenuStyle");
     const logo = localStorage.getItem("Logo");
@@ -162,13 +164,13 @@ function Menu() {
     }
     setMenuStyleLS(localStorage.getItem("menuStyle"))
     setMenuStylevvv({
-      ...menuStyle,
+      ...menuStyle[0],
       ...menuStyles[menuStyleLS-1]?.properties,
     });
 
 
 
-  }, [menuStylevvv ]);
+  }, [menuStylevvv, menuStyle]);
  
    
   return (
@@ -178,7 +180,7 @@ function Menu() {
       ))}
 
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? (
+        {isOpen ? ( 
           <CloseIcon color="white" size={28} />
         ) : (
           <MenuIcon color="white" size={28} />
