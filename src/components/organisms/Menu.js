@@ -11,16 +11,8 @@ function Menu() {
   
    const [menuStyle, setMenuStyle] = useState({});
   const [isOpen, setIsOpen] = useState(false);
-  const [MenuStyleDinamic, setMenuStyleDinamic] = useState({});
   
-  let [menuStylevvv,setMenuStylevvv] = useState({
-    ...menuStyle,
-    ...MenuStyleDinamic,
-  });
-
-      let [menuStyleLS, setMenuStyleLS] = useState([]);
-    
-
+  let [menuStyleLS, setMenuStyleLS] = useState([]);
 
   const menuStyles = useMemo(() => [
     {
@@ -128,20 +120,36 @@ function Menu() {
   const style = [{
     height: "90px",
     padding: "15px 50px",
-    justifyContent: " ",
+    justifyContent: "space-between",
   }];
+  
+  const menuStylevvv = useMemo(() => {
+    return {
+      ...menuStyle[0],
+      ...menuStyles[menuStyleLS - 1]?.properties,
+    };
+  }, [menuStyle, menuStyleLS, menuStyles]);
+  
+
+    
+
+
+ 
 
   useEffect(() => {
     let loc = localStorage.getItem("menuStyle");
+    const styleLS = localStorage.getItem("MenuStyle");
+
     
         if (loc == null) {
           localStorage.setItem("menuStyle", 1);
         } else {  
           setMenuStyleLS(JSON.parse(loc));
         }
+
+        
         
 
-    const styleLS = localStorage.getItem("MenuStyle");
     const logo = localStorage.getItem("Logo");
     const comps = localStorage.getItem("Navbar");
 
@@ -163,14 +171,11 @@ function Menu() {
       setLN(JSON.parse(comps));
     }
     setMenuStyleLS(localStorage.getItem("menuStyle"))
-    setMenuStylevvv({
-      ...menuStyle[0],
-      ...menuStyles[menuStyleLS-1]?.properties,
-    });
+    
 
 
 
-  }, [menuStylevvv, menuStyle]);
+  }, []);
  
    
   return (

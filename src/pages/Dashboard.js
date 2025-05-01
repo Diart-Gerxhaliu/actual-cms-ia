@@ -119,6 +119,9 @@ function Dashboard() {
 
   //use Effect
 
+
+
+
   useEffect(() => {
     localStorage.setItem("ServicesGalery", JSON.stringify(servicesGalery));
   }, [servicesGalery]);
@@ -132,7 +135,6 @@ function Dashboard() {
   if (!admin) {
     window.location.href = "/admin/login";
   }
-  console.log(aboutData, "=>abotu data");
 
   return (
     <div
@@ -407,62 +409,59 @@ function Dashboard() {
                     />
                   </div>
                 </div>
-
                 <div className="menuGeneral stylesSpan">
-                  <h1>Menu</h1>
-                  <div>
-                    <h3>Height</h3>
-                    <input
-                      type="text"
-                      name="change"
-                      value={menuStyle.height}
-                      onChange={(e) => {
-                        const newStyle = { ...menuStyle };
-                        newStyle.height = e.target.value;
-                        setMenuStyle(newStyle);
-                        localStorage.setItem(
-                          "MenuStyle",
-                          JSON.stringify(newStyle)
-                        );
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <h3>Justify Content</h3>
-                    <input
-                      type="text"
-                      name="change"
-                      value={menuStyle.justifyContent}
-                      onChange={(e) => {
-                        const newStyle = { ...menuStyle };
-                        newStyle.justifyContent = e.target.value;
-                        setMenuStyle(newStyle);
-                        localStorage.setItem(
-                          "MenuStyle",
-                          JSON.stringify(newStyle)
-                        );
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <h3>Padding</h3>
-                    <input
-                      type="text"
-                      name="change"
-                      value={menuStyle.padding}
-                      onChange={(e) => {
-                        const newStyle = { ...menuStyle };
-                        newStyle.padding = e.target.value;
-                        setMenuStyle(newStyle);
-                        localStorage.setItem(
-                          "MenuStyle",
-                          JSON.stringify(newStyle)
-                        );
-                      }}
-                    />
-                  </div>
+                {Array.isArray(menuStyle) && menuStyle.map((element, index) => {
+                  return <div key={index}>
+                      <h1>Menu</h1>
+                      
+                        <h3>Height</h3>
+                        <input
+                          type="text"
+                          name="change"
+                          value={element.height}
+                          onChange={(e) => {
+                            const newStyle = [...menuStyle];
+                            newStyle[index] = { ...newStyle[index], height: e.target.value };
+                            setMenuStyle(newStyle);
+                            localStorage.setItem("MenuStyle", JSON.stringify(newStyle));
+                          }}
+                        />
+                      
+                        <h3>Justify Content</h3>
+                        <input
+                          type="text"
+                          name="change"
+                          value={element.justifyContent}
+                          onChange={(e) => {
+                            const newStyle = [...menuStyle];
+                            newStyle[index] = {
+                              ...newStyle[index],
+                              justifyContent: e.target.value,
+                            };
+                            setMenuStyle(newStyle);
+                            localStorage.setItem("MenuStyle", JSON.stringify(newStyle));
+                          }}
+                        />
+                      
+                        <h3>Padding</h3>
+                        <input
+                          type="text"
+                          name="change"
+                          value={element.padding}
+                          onChange={(e) => {
+                            const newStyle = [...menuStyle];
+                            newStyle[index] = {
+                              ...newStyle[index],
+                              padding: e.target.value,
+                            };
+                            setMenuStyle(newStyle);
+                            localStorage.setItem("MenuStyle", JSON.stringify(newStyle));
+                          }}
+                        />
+                      
+                    </div>;
+                  })}
                 </div>
-
                 <div className="bannerGeneral stylesSpan">
                   <h1>Banner</h1>
                   <div>
