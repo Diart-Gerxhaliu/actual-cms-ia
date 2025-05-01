@@ -1083,7 +1083,7 @@ function Dashboard() {
 
         {data === "feedback" && (
           <div className="feedback">
-            {feedback.size > 0 ? (
+            {feedback.length > 0 ? (
               feedback.map((element, index) => (
                 <div className="card" key={index}>
                   <h1>{element.name}</h1>
@@ -1100,6 +1100,7 @@ function Dashboard() {
             )}
           </div>
         )}
+
 
         {data === "posts" && (
           <div className="blog-grid row">

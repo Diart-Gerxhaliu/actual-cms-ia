@@ -50,7 +50,7 @@ function ContactTemplate() {
         <input name="phone" type="text" placeholder="Your Phone Number" />
         <input name="subject" type="text" placeholder="Subject" required />
         <textarea name="message" placeholder="Your Message" required></textarea>
-
+        <button type="submit" className="submit-button">Send Message</button>
         </form>
       </div>
 
