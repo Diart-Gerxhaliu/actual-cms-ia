@@ -142,7 +142,7 @@ function Menu() {
 
     
         if (loc == null) {
-          localStorage.setItem("menuStyle", 1);
+          localStorage.setItem("menuStyle", 2);
         } else {  
           setMenuStyleLS(JSON.parse(loc));
         }

@@ -26,13 +26,13 @@ function HomeTemplate() {
     } else {
       setBan(JSON.parse(banner));
     }
-
+  
     if (abouthome == null) {
       localStorage.setItem("HomeAbout", JSON.stringify(Abo));
     } else {
       setAbo(JSON.parse(abouthome));
     }
-
+  
     if (services == null) {
       localStorage.setItem("HomeServices", JSON.stringify(Serve));
     } else {
@@ -53,6 +53,7 @@ function HomeTemplate() {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + ban.length) % ban.length);
   };
+  if (!ban||!abo||!srv) return <p>Loading...</p>;
 
   return (
     <div className="home">
