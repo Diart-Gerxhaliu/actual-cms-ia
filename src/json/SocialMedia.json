@@ -1,11 +1,17 @@
 [
-    {
-        "icon": "https://www.svgrepo.com/show/512120/facebook-176.svg"
-    },
-    {
-        "icon": "https://www.svgrepo.com/show/521711/instagram.svg"
-    },
-    {
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg"
-    }
+  {
+    "name": "Facebook",
+    "icon": "https://www.svgrepo.com/show/512120/facebook-176.svg",
+    "link": "https://facebook.com"
+  },
+  {
+    "name": "Instagram",
+    "icon": "https://www.svgrepo.com/show/521711/instagram.svg",
+    "link": "https://instagram.com"
+  },
+  {
+    "name": "X",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg",
+    "link": "https://x.com"
+  }
 ]

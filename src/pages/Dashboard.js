@@ -113,7 +113,12 @@ function Dashboard() {
       localStorage.setItem("blogPosts", JSON.stringify(updatedPosts));
     };
     
-    
+    const deletePost = (id) => {
+      const updatedPosts = blogPosts.filter((post) => post.id !== id);
+      setBlogPosts(updatedPosts);
+      localStorage.setItem("blogPosts", JSON.stringify(updatedPosts));
+    };
+
 
 
 
@@ -1193,6 +1198,22 @@ function Dashboard() {
                 >
                   {post.isConfigOpen ? "Close Config" : "Config"}
                 </button>
+                <button
+                  onClick={() => deletePost(post.id)}
+                  style={{
+                    marginTop: "10px",
+                    marginLeft: "10px",
+                    cursor: "pointer",
+                    backgroundColor: "red",
+                    color: "white",
+                    border: "none",
+                    padding: "5px 10px",
+                    borderRadius: "5px"
+                  }}
+                >
+                  Delete
+                </button>
+
 
 
                 
@@ -1215,7 +1236,7 @@ function Dashboard() {
         }}>
           Add Post
         </button>
-                
+        
         </div>
         
         )}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ContactTemplate.css";
 
-function ContactTemplate() {
+function    ContactTemplate() {
   const [contactForm, setContactForm] = useState(() => {
     const saved = localStorage.getItem("ContactForm");
     return saved ? JSON.parse(saved) : [];
@@ -36,7 +36,7 @@ function ContactTemplate() {
           <p>We'd love to hear from you! Reach us through any of the methods below:</p>
           <ul>
             <li><strong>Email:</strong> diartgerxhaliu@gmail.com </li>
-            <li><strong>Phone:</strong> +383 (0) 45 884 852z</li>
+            <li><strong>Phone:</strong> +383 (0) 45 884 852</li>
             <li><strong>Location:</strong> Rruga Gjergj Kastrioti Skenderbeu</li>
           </ul>
         </div>
