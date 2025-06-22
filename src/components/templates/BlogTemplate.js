@@ -24,9 +24,6 @@ export default function BlogTemplate() {
     }
   }, []);
 
-  const toggleRemoveMode = () => {
-    setRemoveMode(!removeMode);
-  };
 
   const removePost = (id) => {
     const updatedPosts = posts.filter((post) => post.id !== id);
@@ -110,13 +107,11 @@ export default function BlogTemplate() {
         <button className="more-btn" onClick={showMorePosts}>
           More Templates
         </button>
+        
       </div>
 
-      {removeMode && (
-        <button className="done-btn" onClick={toggleRemoveMode}>
-          Done
-        </button>
-      )}
+      
+      
     </div>
   );
 }
