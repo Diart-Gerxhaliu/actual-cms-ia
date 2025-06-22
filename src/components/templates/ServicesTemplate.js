@@ -1,20 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ServicesTemplate.css";
+import Banner from "../organisms/Banner";
+import CardServices from "../organisms/CardService";
 import ServiceDataJson from "../../json/Service/ServiceData.json";
 import ServiceBannerJson from "../../json/Service/Banner.json";
 
-import Banner from "../organisms/Banner";
-import ServiceImage from "../../assets/ServiceImage.jpg";
-
-const ServiceTemplate = () => {
+const ServicesTemplate = () => {
   const [servicesData, setServicesData] = useState(null);
   const [servicesBanner, setServicesBanner] = useState([]);
 
   useEffect(() => {
-    console.log("Fetching data from localStorage...");
     try {
-      let storedData = localStorage.getItem("servicesData");
-      let bannerData = localStorage.getItem("servicesBanner");
+      const storedData = localStorage.getItem("servicesData");
+      const bannerData = localStorage.getItem("servicesBanner");
 
       if (!storedData) {
         localStorage.setItem("servicesData", JSON.stringify(ServiceDataJson));
@@ -53,23 +51,10 @@ const ServiceTemplate = () => {
           ))}
       </div>
       <div className="content-section">
-        <div className="image-container">
-          <img src={ServiceImage} alt="Business" className="service-image" />
-        </div>
-
-        <div className="services-grid">
-          {servicesData &&
-            servicesData.map((item, index) => (
-              <div className="service-card" key={index}>
-                <img src={item.icon} alt={item.title} />
-                <h2>{item.title}</h2>
-                <p>{item.description}</p>
-              </div>
-            ))}
-        </div>
+        <CardServices />
       </div>
     </div>
   );
 };
 
-export default ServiceTemplate;
+export default ServicesTemplate;

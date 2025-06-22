@@ -1,13 +1,13 @@
-import React from 'react'
-import ServicesTemplate from '../components/templates/ServicesTemplate'
-import './services.css'
+import React from "react";
+import ServicesTemplate from "../components/templates/ServicesTemplate";
+import "./services.css";
 
 function Services() {
   return (
-    <div className='services'>
-     <ServicesTemplate/>
+    <div className="services">
+      <ServicesTemplate />
     </div>
-  )
+  );
 }
 
-export default Services
+export default Services;
