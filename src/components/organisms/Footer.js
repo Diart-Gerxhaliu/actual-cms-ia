@@ -114,13 +114,37 @@ function Footer() {
         boxShadow: appliedStyle.boxShadow || "none",
       }}
     >
-      {/* Logo */}
+      {/* Logo with background circle */}
       <Box
-        component="img"
-        src="/logo1.png"
-        alt="Logo"
-        sx={{ height: 60, mb: 3 }}
-      />
+        sx={{
+          display: "inline-block",
+          bgcolor:
+            appliedStyle.color === "#ffffff"
+              ? "rgba(255, 255, 255, 0.15)"
+              : "rgba(0, 0, 0, 0.15)",
+          borderRadius: "30%",
+          p: 1,
+          mb: 3,
+          boxShadow:
+            appliedStyle.name === "Neon Glow"
+              ? "0 0 10px #0ff, 0 0 20px #0ff"
+              : "0 2px 5px rgba(0,0,0,0.15)",
+          transition: "all 0.3s ease",
+          "&:hover": {
+            boxShadow:
+              appliedStyle.name === "Neon Glow"
+                ? "0 0 20px #ff00ff, 0 0 30px #ff00ff"
+                : "0 4px 12px rgba(0,0,0,0.3)",
+          },
+        }}
+      >
+        <Box
+          component="img"
+          src="/logo1.png"
+          alt="Logo"
+          sx={{ height: 60, display: "block" }}
+        />
+      </Box>
 
       {/* Navigation */}
       <Stack
